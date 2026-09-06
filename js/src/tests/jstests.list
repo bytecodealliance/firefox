@@ -43,6 +43,180 @@ skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/
 skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/toLowerCase/special_casing_conditional.js
 skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/toLocaleLowerCase/Final_Sigma_U180E.js
 skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/toLocaleLowerCase/special_casing_conditional.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/localeCompare/15.5.4.9_CE.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/language/literals/regexp/u-case-mapping.js
+
+# Unicode property escapes need the Intl property tables.
+skip-if(!this.hasOwnProperty("Intl")) include test262/built-ins/RegExp/property-escapes/generated/jstests.list
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/property-escapes/character-class.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/property-escapes/special-property-value-Script_Extensions-Unknown.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/prototype/exec/regexp-builtin-exec-v-u-flag.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/regexp-modifiers/add-ignoreCase-affects-slash-lower-p.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/regexp-modifiers/add-ignoreCase-affects-slash-upper-p.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/regexp-modifiers/remove-ignoreCase-affects-slash-lower-p.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/regexp-modifiers/remove-ignoreCase-affects-slash-upper-p.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/match/regexp-prototype-match-v-u-flag.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/matchAll/regexp-prototype-matchAll-v-u-flag.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/replace/regexp-prototype-replace-v-u-flag.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/search/regexp-prototype-search-v-flag.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/String/prototype/search/regexp-prototype-search-v-u-flag.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-difference-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-difference-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-escape-difference-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-escape-difference-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-escape-intersection-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-escape-intersection-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-escape-union-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-escape-union-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-intersection-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-intersection-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-union-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-class-union-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-difference-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-difference-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-intersection-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-intersection-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-difference-character-class-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-difference-character-class.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-difference-character.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-difference-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-difference-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-difference-string-literal.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-intersection-character-class-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-intersection-character-class.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-intersection-character.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-intersection-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-intersection-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-intersection-string-literal.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-union-character-class-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-union-character-class.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-union-character.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-union-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-union-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-property-escape-union-string-literal.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-union-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/character-union-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-difference-character-class-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-difference-character-class.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-difference-character.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-difference-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-difference-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-difference-string-literal.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-intersection-character-class-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-intersection-character-class.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-intersection-character.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-intersection-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-intersection-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-intersection-string-literal.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-union-character-class-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-union-character-class.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-union-character.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-union-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-union-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/property-of-strings-escape-union-string-literal.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/rgi-emoji-13.1.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/rgi-emoji-14.0.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/rgi-emoji-15.0.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/rgi-emoji-15.1.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/rgi-emoji-16.0.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/string-literal-difference-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/string-literal-difference-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/string-literal-intersection-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/string-literal-intersection-property-of-strings-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/string-literal-union-character-property-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicodeSets/generated/string-literal-union-property-of-strings-escape.js
+
+# Case-insensitive matching under the u and v flags needs the Intl case
+# folding tables.
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/unicode_full_case_folding.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/regexp-modifiers/add-ignoreCase-affects-slash-lower-b.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/regexp-modifiers/add-ignoreCase-affects-slash-upper-b.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/regexp-modifiers/add-ignoreCase-affects-slash-lower-w.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/built-ins/RegExp/regexp-modifiers/add-ignoreCase-affects-slash-upper-w.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/staging/sm/RegExp/ignoreCase-non-latin1-to-latin1.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/staging/sm/RegExp/unicode-class-ignoreCase.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/staging/sm/RegExp/unicode-ignoreCase-ascii.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/staging/sm/RegExp/unicode-ignoreCase-escape.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/staging/sm/RegExp/unicode-ignoreCase-word-boundary.js
+skip-if(!this.hasOwnProperty("Intl")) script test262/staging/sm/RegExp/unicode-ignoreCase.js
+
+# The wasi shell's stack is too small for these.
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script test262/language/statements/function/S13.2.1_A1_T1.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/RegExp/regress-119909.js
+
+# The wasi shell has no threads, so timeout() cannot create its watchdog.
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/extensions/regress-477187.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/regress/regress-452498-052-a.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/regress/regress-452498-114-a.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/regress/regress-479430-01.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/regress/regress-479430-02.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/regress/regress-479430-03.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/regress/regress-479430-04.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/regress/regress-479430-05.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/regress/regress-620376-1.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script test262/staging/sm/regress/regress-642247.js
+
+# The wasi shell has no time zone database and keeps UTC regardless of TZ.
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/Date/parse-dashed-numeric-date.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/Date/parse-period.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/Date/time-zone-2038-pst.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/Date/time-zone-pst.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/Date/time-zones-posix.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/Date/time-zones.js
+
+# The wasi shell has no os.system and no file-mapped ArrayBuffers.
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script shell/os.js
+skip-if(this.hasOwnProperty("getBuildConfiguration")&&getBuildConfiguration("wasi")) script non262/extensions/file-mapped-arraybuffers.js
+
+skip-if(!this.hasOwnProperty("SharedArrayBuffer")) script test262/staging/sm/Atomics/cross-compartment.js
+skip-if(!this.hasOwnProperty("SharedArrayBuffer")) script test262/staging/sm/Atomics/detached-buffers.js
+
+# The NightMonkey tier has no frame introspection: fun.caller and
+# fun.arguments read null from a compiled frame.
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/language/arguments-object/10.6-13-a-2.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/language/arguments-object/10.6-13-a-3.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/Function/regress-222029-001.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/Function/regress-222029-002.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/Function/regress-85880.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/built-ins/Function/15.3.5.4_2-95gs.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/extensions/arguments-property-access-in-function.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/extensions/function-caller-skips-eval-frames.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/extensions/function-properties.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/regress/regress-577648-1.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/regress/regress-577648-2.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/regress/regress-586482-1.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/regress/regress-586482-2.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/regress/regress-586482-3.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/regress/regress-586482-4.js
+
+# Compiled frames carry no source positions: Error.stack, lineNumber,
+# columnNumber and fileName are empty for them.
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/async-functions/ErrorStack.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/Exceptions/errstack-001.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/Promise/any-stack.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/extensions/column-numbers.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/extensions/errorcolumnblame.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/extensions/regress-50447-1.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/extensions/toSource-infinite-recursion.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/regress/regress-167328.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/template-strings/debugLineNumber.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script shell/script-file-name-utf8.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/extensions/regress-645160.js
+
+# Error messages from compiled code cannot name the offending expression
+# (no bytecode frame to decompile), so the engine falls back to the
+# value's source.
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/extensions/regress-353116.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/regress/regress-328664.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/regress/regress-372364.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/regress/regress-420919.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script test262/staging/sm/object/toPrimitive.js
+
+# loadRelativeToScript resolves against the calling script's frame, which a
+# compiled caller does not expose.
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/extensions/clone-v1-typed-array.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/object/15.2.3.6-function-length.js
+skip-if(this.hasOwnProperty("nightTierEnabled")&&nightTierEnabled()) script non262/object/15.2.3.6-new-definition.js
 
 # Skip intl402 tests when Intl isn't available.
 skip-if(!this.hasOwnProperty("Intl")) include test262/intl402/jstests.list

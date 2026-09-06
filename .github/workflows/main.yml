@@ -8,18 +8,25 @@ defaults:
   run:
     shell: bash
 
-jobs:    
+jobs:
   test:
     strategy:
       fail-fast: false
       matrix:
         test: [jstests, jit-test]
-        mozconfig: [ debug, pbl-debug, pbl-release, release, aot-ics-release ]
+        mozconfig: [ debug, pbl-debug, pbl-release, release, aot-ics-release, nightmonkey ]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
       with:
         submodules: true
     - run: ./mach --no-interactive bootstrap --application-choice=js
+    - if: matrix.mozconfig == 'nightmonkey'
+      # mach bootstrap only fetches host-target toolchains; the wasm32-wasi
+      # sysroot (crt1.o, libc) must be fetched explicitly into ~/.mozbuild.
+      run: |
+        rustup component add rust-src
+        rustup target add wasm32-wasip1
+        cd ~/.mozbuild && "$GITHUB_WORKSPACE/mach" --log-no-times artifact toolchain --from-build sysroot-wasm32-wasi
     - run: MOZCONFIG=.github/workflows/mozconfig-${{ matrix.mozconfig }} ./mach build
-    - run: MOZCONFIG=.github/workflows/mozconfig-${{ matrix.mozconfig }} ./mach ${{ matrix.test }} ${{ matrix.test == 'jit-test' && '--exclude wasm/atomicity.js' || '' }}
+    - run: MOZCONFIG=.github/workflows/mozconfig-${{ matrix.mozconfig }} ./mach ${{ matrix.test }} ${{ matrix.mozconfig == 'nightmonkey' && '--shell obj-nightmonkey-inprocess/dist/bin/inproc-shell.sh' || '' }} ${{ matrix.test == 'jit-test' && '--exclude wasm/atomicity.js' || '' }}
