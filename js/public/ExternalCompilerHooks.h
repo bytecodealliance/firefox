@@ -37,6 +37,7 @@
 namespace js {
 class AbstractGeneratorObject;
 class NativeObject;
+class ObjectFuse;
 class SharedShape;
 class RegExpShared;
 class RunState;
@@ -107,6 +108,15 @@ struct ExternalCompilerHooks {
   void (*globalDataStored)(JSContext* cx, JS::PropertyKey id,
                            uint64_t valueBits);
   void (*globalLexicalShadowAdded)(JSContext* cx, uint64_t idBits);
+
+  // Object fuses (vm/ObjectFuse.h). Wherever the engine invalidates the Ion
+  // code depending on a constant property of an object fuse's object, it
+  // reports the fuse and the property's slot here, or UINT32_MAX for every
+  // property (a proto mutation or swap). A tier that marks properties
+  // constant (ObjectFuse::tryOptimizeConstantProperty) and relies on them
+  // drops what it assumed. Must not GC.
+  void (*objectFuseInvalidated)(JSContext* cx, js::ObjectFuse* fuse,
+                                uint32_t propSlot);
 
   // Script entry. Every script carries a pointer-sized external word, zero
   // at birth; the engine consults these only for scripts whose word is
