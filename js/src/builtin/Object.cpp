@@ -879,8 +879,8 @@ void PlainObjectAssignCache::assertValid() const {
     return true;
   }
 
-  // The fast path copies slot i to slot i and assumes property i is in slot
-  // i, which permuted slots do not.
+  // The fast path assumes that property i is in slot i, and thus that slots can be
+  // copied directly. That doesn't hold for shapes with permuted slots.
   if (fromPlain->shape()->hasPermutedSlots()) {
     return true;
   }
